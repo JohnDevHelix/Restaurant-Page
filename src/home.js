@@ -15,7 +15,7 @@ export default function HomePage() {
   divAbout.classList.add("about-us");
   const h2 = document.createElement("h2");
   h2.textContent =
-    "Kuya Louie's carenderia serves variety of Filipino home made food.";
+    "Kuya Louie's carenderia serves variety of Filipino home made dishes.";
   divContent.appendChild(divAbout);
   divAbout.appendChild(h2);
 }
