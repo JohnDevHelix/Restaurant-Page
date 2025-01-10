@@ -115,4 +115,26 @@ export function ContactUs() {
   emailInput.setAttribute("placeholder", "Enter your email");
   emailInput.id = "feedback-email";
   emailLabel.appendChild(emailInput);
+
+  const subjectLabel = label.cloneNode(true);
+  subjectLabel.setAttribute("for", "feedback-subject");
+  subjectLabel.textContent = "Subject:";
+  form.appendChild(subjectLabel);
+  const subjectInput = input.cloneNode(true);
+  subjectInput.setAttribute("type", "text");
+  subjectInput.setAttribute("name", "feedback-subject");
+  subjectInput.setAttribute("placeholder", "Enter subject here");
+  subjectInput.id = "feedback-subject";
+  subjectLabel.appendChild(subjectInput);
+
+  const messageLabel = label.cloneNode(true);
+  messageLabel.setAttribute("for", "feedback-message");
+  messageLabel.textContent = "Message:";
+  form.appendChild(messageLabel);
+  const messageInput = document.createElement("textarea");
+  messageInput.setAttribute("type", "text-area");
+  messageInput.setAttribute("name", "feedback-message");
+  messageInput.setAttribute("placeholder", "Enter your message here");
+  messageInput.id = "feedback-message";
+  messageLabel.appendChild(messageInput);
 }
