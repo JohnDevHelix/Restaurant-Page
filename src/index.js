@@ -4,8 +4,10 @@ import { ContactUs } from "./contact";
 import "./style.css";
 
 let currentScreen = HomePage();
+const body = document.querySelector("body");
 const content = document.querySelector("#content");
 const createDiv = document.createElement("div");
+const p = document.createElement("p");
 
 // nav bar
 const header = document.querySelector("header");
@@ -35,3 +37,12 @@ buttons.forEach((button) => {
     }
   });
 });
+
+const footer = document.createElement("footer");
+const footerDiv = createDiv.cloneNode(true);
+footer.appendChild(footerDiv);
+footerDiv.id = "footer";
+const footerP = p.cloneNode(true);
+footerDiv.appendChild(footerP);
+footerP.innerHTML = "&bull; &copy; 2025 - Kuya Louie's Carinderia &bull;";
+body.appendChild(footer);
