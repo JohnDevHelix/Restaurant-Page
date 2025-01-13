@@ -20,10 +20,10 @@ export function Menu() {
   divContent.appendChild(menuContainer);
 
   // menu header
-  const headerDiv = createDiv.cloneNode(true);
-  headerDiv.classList.add("menu-header");
-  menuContainer.appendChild(headerDiv);
-  headerDiv.appendChild(h1);
+  const headerMenuDiv = createDiv.cloneNode(true);
+  headerMenuDiv.classList.add("menu-header");
+  menuContainer.appendChild(headerMenuDiv);
+  headerMenuDiv.appendChild(h1);
   h1.textContent = "Kuya Louie's Menu";
 
   // appetizers
@@ -163,7 +163,7 @@ export function Menu() {
     "Main Course",
     "Pork Adobo",
     "Pork Adobo is pork cooked in soy sauce, vinegar, and garlic. It is considered as the Philippine's national dish because of its popularity."
-  )
+  );
   main3.newMenu(Adobo);
 
   // desserts list
@@ -187,7 +187,4 @@ export function Menu() {
     "Halo-Halo is a refreshing Filipino ice dessert made with various tropical ingredients topped with milk, leche flan, and ice cream."
   );
   dessert3.newMenu(HaloHalo);
-
 }
-
-Menu();
