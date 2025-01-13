@@ -1,10 +1,12 @@
 body {
-  background-color: #ABC4AA;
+  background-color: #abc4aa;
   font-family: "Poppins", serif;
   font-weight: 200;
   font-style: normal;
   margin: 0px;
   padding: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -20,7 +22,7 @@ header {
   display: flex;
   justify-content: flex-end;
   width: 95%;
-  background-color: #675D50;
+  background-color: #675d50;
   border-radius: 0 0 15px 15px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -63,7 +65,8 @@ button:hover {
 
 #content {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   scroll-padding-top: 0;
@@ -74,7 +77,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   width: 70%;
-  background-color: #F3DEBA ;
+  background-color: #f3deba;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
   margin: 20px;
@@ -89,11 +92,19 @@ button:hover {
   margin-top: 20px;
 }
 
+.images-container {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border-bottom: 4px groove black;
+}
+
 #appetizer,
 #main,
 #dessert {
   font-size: 30px;
-  color: #675D50;
+  color: #675d50;
   height: 80px;
   width: 60%;
   display: flex;
@@ -146,19 +157,22 @@ img {
 }
 
 .history-divs {
-  width: 80%;
-  border: black 1px solid;
+  width: 100%;
 }
 
 .history-container {
   display: flex;
-  flex-direction: columns;
-  align-items: center;
+  padding: 0px 30px 30px 30px;
+  width: 80%;
 }
 
 svg {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
+}
+
+.contact-container {
+  width: 50%;
 }
 
 .contact {
@@ -172,9 +186,49 @@ svg {
 .feedback {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 30px 0px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  padding: 10px 30px 30px 30px;
+  width: 70%;
+}
+
+.form-divs {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  font-weight: bold;
+}
+
+textarea {
+  height: 100px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+}
+
+input[type="submit"] {
+  height: 30px;
+  width: 80px;
+}
+
+.historyImg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin: 10px 40px 10px 0px;
+}
+
+.history-images {
+  height: 160px;
+  width: 160px;
 }
